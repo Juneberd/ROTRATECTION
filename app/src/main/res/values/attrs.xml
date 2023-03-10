@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <declare-styleable name="StrokedTextAttrs">
+        <attr name="textStrokeColor" format="color" />
+        <attr name="textStrokeWidth" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseVisualizer">
+        <attr name="avDensity" format="float" />
+        <attr name="avColor" format="color" />
+        <attr name="avType" format="string" />
+        <attr name="avGravity" format="string" />
+        <attr name="avWidth" format="dimension" />
+        <attr name="avSpeed" format="string" />
+    </declare-styleable>
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+
+</resources>
+

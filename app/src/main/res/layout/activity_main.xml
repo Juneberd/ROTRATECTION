@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#00FFFFFF"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/videofor_gif_trim"
+        android:textAlignment="viewStart"
+        android:tint="#23FFFFFF"
+        android:tintMode="src_over"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_liveDetect"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/background_btn1"
+        android:backgroundTintMode="src_in"
+        android:paddingRight="8dp"
+        android:text="LIVE DETECTION"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F0E5EFA6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_module"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_module"
+        android:layout_width="125dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background_btn1"
+        android:text="Module"
+        android:textColor="#F0E5EFA6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:fontFamily="@font/tesla"
+        android:foregroundGravity="fill_horizontal|center_vertical|fill_vertical|center_horizontal"
+        android:gravity="center|center_horizontal"
+        android:text="ROTRATECTION"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/gifImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="117dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtView_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logocircle" />
+
+
+    <!--<com.example.rotratectionv4.AudioVisualizer.CircleLineVisualizer
+        android:id="@+id/blast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:avColor="@color/teal_700"
+        app:avDensity="0.8"
+        app:avSpeed="normal"
+        app:avType="fill"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
